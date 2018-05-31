@@ -1,12 +1,12 @@
 
 module Memorable
-  module ClassMethods
+  module InstanceMethods
     def initialize
       self.class.all << self
     end
   end
 
-  module InstanceMethods
+  module ClassMethods
     def count
       self.all.count
     end
